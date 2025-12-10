@@ -9,20 +9,35 @@ This repository contains Python-based workflows demonstrating how modern account
 
 ### 📊 Key Analysis Modules
 
-#### 1. Forensic Audit Automation (Benford's Law)
-* **Objective:** Detected anomalies in financial datasets to identify potential manipulation or pricing irregularities.
-* **Methodology:** Applied Benford’s Law (First Digit Law) using `numpy` and `matplotlib` to compare actual vs. expected digit frequency.
-* **Outcome:** Successfully flagged deviations in the leading digit '1' (>45% frequency vs 30% expected), simulating an "Audit Red Flag" for substantive testing.
-
-#### 2. Quantitative Market Analysis (Correlation & Risk)
+#### 1. Quantitative Market Analysis (Correlation & Risk)
 * **Objective:** Assessed portfolio diversification benefits between high-growth tech stocks (NVDA vs. TSLA).
 * **Methodology:** Calculated Pearson correlation coefficients on daily returns over a 5-year period.
 * **Outcome:** identified a moderate correlation (0.47), suggesting that while both are "Big Tech," they offer distinct risk profiles for portfolio construction.
 
-#### 3. Technical Forecasting (Golden Cross Detector)
+#### 2. Technical Forecasting (Golden Cross Detector)
 * **Objective:** Programmed a trading signal detector to identify bullish market reversals.
 * **Methodology:** Calculated 50-day and 200-day Simple Moving Averages (SMA) to spot "Golden Cross" intersection points.
 * **Outcome:** Automated the detection of a major buy signal in mid-2025, validating trend analysis without manual charting.
+  
+#### 3. Forensic Audit Automation (Benford's Law)
+* **Objective:** Detected anomalies in financial datasets to identify potential manipulation or pricing irregularities.
+* **Methodology:** Applied Benford’s Law (First Digit Law) using `numpy` and `matplotlib` to compare actual vs. expected digit frequency.
+* **Outcome:** Successfully flagged deviations in the leading digit '1' (>45% frequency vs 30% expected), simulating an "Audit Red Flag" for substantive testing.
+
+#### 4. Materiality Assessment (Data Segmentation)
+* **Objective:** Automated the "Audit Planning" phase by segmenting transactions into material ("Major") vs. immaterial ("Minor") categories.
+* **Methodology:** Scripted a logic rule to flag high-value transactions (> $5,000) for substantive testing.
+* **Outcome:** Instantly filtered 17,000+ transactions down to the critical ~800 high-risk items requiring auditor attention, reducing sampling time by 95%.
+
+#### 5. Sales Forecasting (Advisory & Budgeting)
+* **Objective:** Transitioned from historical reporting to forward-looking advisory by predicting future cash flow trends.
+* **Methodology:** Aggregated daily sales data and trained a **Linear Regression** model (`sklearn`) to forecast revenue for the next 30 days.
+* **Outcome:** Produced a visual trend line for "Going Concern" assessments, identifying a positive growth trajectory despite daily volatility.
+
+#### 6. Automated Reconciliation (The "Matching" Problem)
+* **Objective:** Solved a common accounting error where bank statements do not match internal ledgers due to missing transactions or duplicate order IDs.
+* **Methodology:** Built a Python script using `pd.merge` with a **Composite Key** (Order ID + Sales Amount) to strictly reconcile 2,000+ rows instantly.
+* **Outcome:** Identified 5 specific missing transactions that a standard VLOOKUP failed to catch due to duplicate keys.
 
 ## 🛠 Tech Stack
 * **Languages:** Python 3.10+
