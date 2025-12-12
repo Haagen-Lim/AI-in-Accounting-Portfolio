@@ -39,6 +39,21 @@ This repository contains Python-based workflows demonstrating how modern account
 * **Methodology:** Built a Python script using `pd.merge` with a **Composite Key** (Order ID + Sales Amount) to strictly reconcile 2,000+ rows instantly.
 * **Outcome:** Identified 5 specific missing transactions that a standard VLOOKUP failed to catch due to duplicate keys.
 
+## 🛠️ Excel Automation Scripts (VBA)
+
+This repository contains scripts written in Visual Basic for Applications (VBA), demonstrating the ability to automate common, repetitive tasks within Microsoft Excel—a core tool in finance and accounting environments.
+
+### Project: One-Click Report Formatter (`MakeItPretty.bas`)
+
+**Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
+
+**Features:**
+* **Instant Formatting:** Automatically AutoFits all columns for readability.
+* **Professional Headers:** Applies custom styling (Dark Blue/White text) to headers for consistency.
+* **Audit Readiness:** Instantly applies Filters and Freezes the Header Row, making the sheet ready for immediate review and analysis.
+
+**Impact:** Demonstrates proficiency in extending the functionality of staple business software to improve workflow efficiency and data presentation quality.
+
 ## 🛠 Tech Stack
 * **Languages:** Python 3.10+
 * **Libraries:** Pandas (Data Manipulation), Matplotlib (Visualisation), YFinance (Market Data).
