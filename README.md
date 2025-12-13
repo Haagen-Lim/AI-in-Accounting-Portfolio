@@ -39,20 +39,21 @@ This repository contains Python-based workflows demonstrating how modern account
 * **Methodology:** Built a Python script using `pd.merge` with a **Composite Key** (Order ID + Sales Amount) to strictly reconcile 2,000+ rows instantly.
 * **Outcome:** Identified 5 specific missing transactions that a standard VLOOKUP failed to catch due to duplicate keys.
 
-## 🛠️ Excel Automation Scripts (VBA)
+---
 
-This repository contains scripts written in Visual Basic for Applications (VBA), demonstrating the ability to automate common, repetitive tasks within Microsoft Excel—a core tool in finance and accounting environments.
+### 🔧 Excel Automation & Workflow Optimization (VBA)
+While Python handles heavy data analysis, **Visual Basic for Applications (VBA)** is essential for automating day-to-day accounting workflows within Excel.
 
-### Project: One-Click Report Formatter (`MakeItPretty.bas`)
+#### 7. One-Click Report Formatter (`MakeItPretty.bas`)
+* **Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
+* **Methodology:** Wrote a VBA macro that interacts with the Excel Object Model to identify used ranges, apply conditional formatting, and lock viewpanes programmatically.
+* **Outcome:** Created a "One-Click" solution that:
+    * **Auto-Fits** all columns for immediate readability.
+    * **Standardizes Headers** with professional styling (Dark Blue/White).
+    * **Enables Audit Features** (Filters & Freeze Panes) automatically.
+    * **Result:** Reduces manual report preparation time by ~90% per file.
 
-**Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
-
-**Features:**
-* **Instant Formatting:** Automatically AutoFits all columns for readability.
-* **Professional Headers:** Applies custom styling (Dark Blue/White text) to headers for consistency.
-* **Audit Readiness:** Instantly applies Filters and Freezes the Header Row, making the sheet ready for immediate review and analysis.
-
-**Impact:** Demonstrates proficiency in extending the functionality of staple business software to improve workflow efficiency and data presentation quality.
+---
 
 ## 🛠 Tech Stack
 * **Languages:** Python 3.10+
