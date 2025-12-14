@@ -53,6 +53,11 @@ While Python handles heavy data analysis, **Visual Basic for Applications (VBA)*
     * **Enables Audit Features** (Filters & Freeze Panes) automatically.
     * **Result:** Reduces manual report preparation time by ~90% per file.
 
+#### 8. Multi-File Consolidator (`Consolidator.bas`)
+* **Objective:** Solved the "Month-End" bottleneck of manually combining data from multiple departmental spreadsheets (e.g., Branch budgets).
+* **Methodology:** Utilized VBA `Dir` loops and `FileDialog` to iterate through user-selected folders, extracting and appending data to a Master Ledger automatically.
+* **Outcome:** Capable of merging 50+ Excel files in under 30 seconds, ensuring data accuracy and eliminating manual copy-paste errors.
+
 ---
 
 ## 🛠 Tech Stack
