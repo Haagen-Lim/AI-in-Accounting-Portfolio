@@ -9,7 +9,7 @@ This repository contains Python-based workflows demonstrating how modern account
 
 ### 📊 Key Analysis Modules
 
-[Financial Forensic Portfolio:](Financial_Forensic_Portfolio.ipynb)
+### [Financial Forensic Portfolio:](Financial_Forensic_Portfolio.ipynb)
 
 #### 1. Quantitative Market Analysis (Correlation & Risk)
 * **Objective:** Assessed portfolio diversification benefits between high-growth tech stocks (NVDA vs. TSLA).
@@ -26,7 +26,7 @@ This repository contains Python-based workflows demonstrating how modern account
 * **Methodology:** Applied Benford’s Law (First Digit Law) using `numpy` and `matplotlib` to compare actual vs. expected digit frequency.
 * **Outcome:** Successfully flagged deviations in the leading digit '1' (>45% frequency vs 30% expected), simulating an "Audit Red Flag" for substantive testing.
 
-[Audit Planning & Advisory Tool:](Part_2_Advisory_and_Audit_Planning.ipynb)
+### [Audit Planning & Advisory Tool:](Part_2_Advisory_and_Audit_Planning.ipynb)
 
 #### 4. Materiality Assessment (Data Segmentation)
 * **Objective:** Automated the "Audit Planning" phase by segmenting transactions into material ("Major") vs. immaterial ("Minor") categories.
@@ -48,7 +48,7 @@ This repository contains Python-based workflows demonstrating how modern account
 ### 🔧 Excel Automation & Workflow Optimisation (VBA)
 While Python handles heavy data analysis, **Visual Basic for Applications (VBA)** is essential for automating day-to-day accounting workflows within Excel.
 
-#### 7. One-Click Report Formatter [MakeItPretty.bas)](MakeItPretty.bas)
+#### 7. One-Click Report Formatter [MakeItPretty.bas](MakeItPretty.bas)
 * **Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
 * **Methodology:** Wrote a VBA macro that interacts with the Excel Object Model to identify used ranges, apply conditional formatting, and lock viewpanes programmatically.
 * **Outcome:** Created a "One-Click" solution that:
