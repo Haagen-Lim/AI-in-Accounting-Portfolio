@@ -48,7 +48,7 @@ This repository contains Python-based workflows demonstrating how modern account
 ### 🔧 Excel Automation & Workflow Optimisation (VBA)
 While Python handles heavy data analysis, **Visual Basic for Applications (VBA)** is essential for automating day-to-day accounting workflows within Excel.
 
-#### 7. One-Click Report Formatter [Single-Sheet Formatter (MakeItPretty)](MakeItPretty.bas)
+#### 7. One-Click Report Formatter [MakeItPretty.bas)](MakeItPretty.bas)
 * **Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
 * **Methodology:** Wrote a VBA macro that interacts with the Excel Object Model to identify used ranges, apply conditional formatting, and lock viewpanes programmatically.
 * **Outcome:** Created a "One-Click" solution that:
@@ -57,12 +57,12 @@ While Python handles heavy data analysis, **Visual Basic for Applications (VBA)*
     * **Enables Audit Features** (Filters & Freeze Panes) automatically.
     * **Result:** Reduces manual report preparation time by ~90% per file.
 
-#### 8. Multi-File Consolidator [Multi-File Consolidator](Consolidator.bas)
+#### 8. Multi-File Consolidator [Consolidator.bas](Consolidator.bas)
 * **Objective:** Solved the "Month-End" bottleneck of manually combining data from multiple departmental spreadsheets (e.g., Branch budgets).
 * **Methodology:** Utilised VBA `Dir` loops and `FileDialog` to iterate through user-selected folders, extracting and appending data to a Master Ledger automatically.
 * **Outcome:** Capable of merging 50+ Excel files in under 30 seconds, ensuring data accuracy and eliminating manual copy-paste errors.
 
-#### 9. Automated Management Reporting [Automated Management Reporting](ReportToPDF.bas)
+#### 9. Automated Management Reporting [ReportToPDF.bas](ReportToPDF.bas)
 * **Objective:** To streamline the "Month-End Pack" creation process, where multiple financial statements (P&L, Balance Sheet, Cash Flow) need to be formatted and combined into a single client-ready PDF.
 * **Methodology:** Programmed a script to apply consistent branding (Headers/Footers/Fonts) across all sheets and utilise the `ExportAsFixedFormat` function to merge selected sheets into one document.
 * **Outcome:** Generates a professional, dated, and branded PDF management pack in <5 seconds, eliminating the need to manually print and merge separate tabs.
