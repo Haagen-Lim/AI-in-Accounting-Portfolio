@@ -28,17 +28,17 @@ This repository contains Python-based workflows demonstrating how modern account
 
 ### [Audit Planning & Advisory Tool (Click to see code & output):](Part_2_Advisory_and_Audit_Planning.ipynb)
 
-#### 4. Materiality Assessment (Data Segmentation)
+#### 1. Materiality Assessment (Data Segmentation)
 * **Objective:** Automated the "Audit Planning" phase by segmenting transactions into material ("Major") vs. immaterial ("Minor") categories.
 * **Methodology:** Scripted a logic rule to flag high-value transactions (> $5,000) for substantive testing.
 * **Outcome:** Instantly filtered 17,000+ transactions down to the critical ~800 high-risk items requiring auditor attention, reducing sampling time by 95%.
 
-#### 5. Sales Forecasting (Advisory & Budgeting)
+#### 2. Sales Forecasting (Advisory & Budgeting)
 * **Objective:** Transitioned from historical reporting to forward-looking advisory by predicting future cash flow trends.
 * **Methodology:** Aggregated daily sales data and trained a **Linear Regression** model (`sklearn`) to forecast revenue for the next 30 days.
 * **Outcome:** Produced a visual trend line for "Going Concern" assessments, identifying a positive growth trajectory despite daily volatility.
 
-#### 6. Automated Reconciliation (The "Matching" Problem)
+#### 3. Automated Reconciliation (The "Matching" Problem)
 * **Objective:** Solved a common accounting error where bank statements do not match internal ledgers due to missing transactions or duplicate order IDs.
 * **Methodology:** Built a Python script using `pd.merge` with a **Composite Key** (Order ID + Sales Amount) to strictly reconcile 2,000+ rows instantly.
 * **Outcome:** Identified 5 specific missing transactions that a standard VLOOKUP failed to catch due to duplicate keys.
@@ -48,7 +48,7 @@ This repository contains Python-based workflows demonstrating how modern account
 ### 🔧 Excel Automation & Workflow Optimisation (VBA)
 While Python handles heavy data analysis, **Visual Basic for Applications (VBA)** is essential for automating day-to-day accounting workflows within Excel.
 
-#### 7. One-Click Report Formatter [MakeItPretty.bas (Click to see code)](MakeItPretty.bas)
+#### 1. One-Click Report Formatter [MakeItPretty.bas (Click to see code)](MakeItPretty.bas)
 * **Objective:** To eliminate the manual time spent cleaning and formatting raw transaction reports downloaded from accounting software (e.g., Xero, MYOB).
 * **Methodology:** Wrote a VBA macro that interacts with the Excel Object Model to identify used ranges, apply conditional formatting, and lock viewpanes programmatically.
 * **Outcome:** Created a "One-Click" solution that:
@@ -57,12 +57,12 @@ While Python handles heavy data analysis, **Visual Basic for Applications (VBA)*
     * **Enables Audit Features** (Filters & Freeze Panes) automatically.
     * **Result:** Reduces manual report preparation time by ~90% per file.
 
-#### 8. Multi-File Consolidator [Consolidator.bas (Click to see code)](Consolidator.bas)
+#### 2. Multi-File Consolidator [Consolidator.bas (Click to see code)](Consolidator.bas)
 * **Objective:** Solved the "Month-End" bottleneck of manually combining data from multiple departmental spreadsheets (e.g., Branch budgets).
 * **Methodology:** Utilised VBA `Dir` loops and `FileDialog` to iterate through user-selected folders, extracting and appending data to a Master Ledger automatically.
 * **Outcome:** Capable of merging 50+ Excel files in under 30 seconds, ensuring data accuracy and eliminating manual copy-paste errors.
 
-#### 9. Automated Management Reporting [ReportToPDF.bas (Click to see code)](ReportToPDF.bas)
+#### 3. Automated Management Reporting [ReportToPDF.bas (Click to see code)](ReportToPDF.bas)
 * **Objective:** To streamline the "Month-End Pack" creation process, where multiple financial statements (P&L, Balance Sheet, Cash Flow) need to be formatted and combined into a single client-ready PDF.
 * **Methodology:** Programmed a script to apply consistent branding (Headers/Footers/Fonts) across all sheets and utilise the `ExportAsFixedFormat` function to merge selected sheets into one document.
 * **Outcome:** Generates a professional, dated, and branded PDF management pack in <5 seconds, eliminating the need to manually print and merge separate tabs.
